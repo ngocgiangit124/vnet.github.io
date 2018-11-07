@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+            position: relative;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 280px;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+        .jump {
+             width: 100px;
+             height: 100px;
+             background-color: red;
+             position: absolute;
+             -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+             -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+             -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+             animation-name: example;
+             animation-duration: 5s;
+             animation-iteration-count: infinite;
+         }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            12.5%  {background-color:yellow; left:1200px; top:500px;}
+            25%  {background-color:yellow; left:500px; top:100px;}
+            50%  {background-color:blue; right:0px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+        .jump1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+            animation-name: example1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes example1 {
+            0%   {background-color:red; right:0px; top:0px;}
+            12.5%  {background-color:yellow; right:1200px; top:500px;}
+            25%  {background-color:yellow; right:500px; top:100px;}
+            50%  {background-color:blue; right:0px; top:200px;}
+            75%  {background-color:green; right:0px; top:200px;}
+            100% {background-color:red; right:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Page Not Found</h1>
+    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <div class="jump"></div>
+    <div class="jump1"></div>
+</body>
+</html>
+<!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
